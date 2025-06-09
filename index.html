@@ -1,61 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>me when</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <script>
-            function play() {
-              var audio = document.getElementById("audio");
-              audio.play();
-            }
-        </script>
-          <div class="background">
-            <div class="left">
-              <h1>Hiya, I'm Acqua!</h1>
-              <p>This is a silly site.</p>
-              <p>Take a look around!</p>
-              <br>
-              <p>I'm working on new pages!</p>
-              <p>DM me on discord: Acquawo</p>
-              <h3>Welp, cya :3</h3>
-              <br>
-              <audio controls autoplay loop>
-                <source src="addiction.mp3" type="audio/mpeg" style="max-width:100%;height:auto;">
-              </audio>
-              <br>
-            </div>
-            <div class="right">
-              <div class="clicker">
-                <input type="button" onclick="play()" class="clickbutton" style="max-width:100%">
-                <audio id="audio" src="vine-boom.mp3"></audio>
-                <br>
-              </div>
-              <br>
-              <p>Click Me!</p>
-              <br>
-              <script src="https://minnit.chat/js/embed.js" defer></script><minnit-chat data-chatname="https://organizations.minnit.chat/610654684576843/Main?embed&nickname=" data-style="width:90%;height:500px;max-height:90vh;"></minnit-chat><p class="powered-by-minnit">
-            </div>
-            <div class="center" style="width: 500px; margin: 0 auto;">
-              <h2>Acqua face reveal!!!</h2>
-                        <div class="cat-art"><strong><pre>
-                              |\_
-                            \` ..\
-                       __,.-" =__Y=
-                     ."        )
-               _    /   ,    \/\_
-              ((____|    )_-\ \_-`
-              `-----'`-----` `--`</pre></strong></div>
-              <br>
-              <p>More pages coming soon!</p>
-              <br>
-              <a href="https://boulderbugle.com/e6wivxwb" class="funnybutton" style="max-width:100%">hii :3</a>
-              <br>
-              <br>
-              <iframe width="560" height="350" style="max-width:100%" src="https://www.youtube.com/embed/89ZeH5RnqeM?si=BeNZkfFdpdQNE6HL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-          </div>
-    </body>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" />
+</head>
+
+<body>
+  <script>
+    $('body').terminal({
+      help: function () {
+        this.echo('Sure, friend! Here are the commands: /n - help: lists all commands /n - fish: you know what that means..');
+      },
+      fish: function() {
+        this.echo($('HOLY MOLY!! /n<img src="https://canalrivertrust.org.uk/media/image/wvudTtGDLfoCyv-A-PCMmw/vKV4hmWNJ7AOEcxgYOTQzcJYvWjY4mI0cZfgiyfArNA/rs:fill:1900:1187:1:0/g:ce/aHR0cHM6Ly9jcnRwcm9kY21zdWtzMDEuYmxvYi5jb3JlLndpbmRvd3MubmV0L2ltYWdlLzAxODk5Y2I0LWE3OTctN2I0ZC04YzM0LTc1NGUwYzk0MzQxZg.webp"> width=30% height=30%'));
+      }
+    }, {
+      greetings: 'Oh! Someone connected! Hm.. you seem new? This IP address isnt in my database... Welp. Im Clover, a sentient server you just connected to! I was programmed by Syfish, we just had a talk and shortly after they disconnected you came in! Sorry, sorry- i dont meet alot of visitors around here. I wont keep ya busy for much longer, try out HELP to see what you can do!'
+    });
+  </script>
+</body>
+
 </html>
