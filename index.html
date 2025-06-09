@@ -4,22 +4,25 @@
 <head>
   <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isomorphic-lolcat"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/xml_formatting.js"></script>
+
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" />
+
+  <style>
+    :root {
+      --size: 1.5;
+    }
+    .command, .directory {
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <script>
-    $('body').terminal({
-      help: function () {
-        this.echo('Sure, friend! Here are the commands: /n - help: lists all commands /n - fish: you know what that means..');
-      },
-      fish: function() {
-        this.echo($('HOLY MOLY!! /n<img src="https://canalrivertrust.org.uk/media/image/wvudTtGDLfoCyv-A-PCMmw/vKV4hmWNJ7AOEcxgYOTQzcJYvWjY4mI0cZfgiyfArNA/rs:fill:1900:1187:1:0/g:ce/aHR0cHM6Ly9jcnRwcm9kY21zdWtzMDEuYmxvYi5jb3JlLndpbmRvd3MubmV0L2ltYWdlLzAxODk5Y2I0LWE3OTctN2I0ZC04YzM0LTc1NGUwYzk0MzQxZg.webp"> width=30% height=30%'));
-      }
-    }, {
-      greetings: 'Oh! Someone connected! Hm.. you seem new? This IP address isnt in my database... Welp. Im Clover, a sentient server you just connected to! I was programmed by Syfish, we just had a talk and shortly after they disconnected you came in! Sorry, sorry- i dont meet alot of visitors around here. I wont keep ya busy for much longer, try out HELP to see what you can do!'
-    });
-  </script>
+  <script src="terminal.js"></script>
 </body>
 
 </html>
